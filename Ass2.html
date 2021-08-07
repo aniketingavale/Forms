@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link href= "Ass2.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+    <body>
+        <div id="outside">
+            <form id="survey-form" action="E:/Brainworks/10 Assignments/Ass-1.html" method="post">
+                <h1 id="title">Application for Job Post</h1>
+                <fieldset>
+                    <div>
+                        <legend>Personal Details</legend></div>
+                    <div>
+                        <label id="name-label" for="name">Name:</label>
+                        <input type="text" required id="name" name="user_name" placeholder="Enter name here">   
+                    </div>
+                    <div>
+                        <label for="address-label">Address:</label>
+                        <input type="Address" id="address" name="Address" placeholder="Enter address here">   
+                    </div>
+                    <div>
+                        <label id="email-label" for="Email">Email:</label>
+                        <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+                    <div>
+                        <label id="number-label" for="phone">Mobile Number:</label>
+                        <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number" min="1111111111" max="9999999999">  
+                    </div>
+                    <div>
+                        <label for="Gender">Gender</label>
+                        <p>
+                            <input type="radio" name="gender" value="male" checked> Male<br>
+                            <input type="radio" name="gender" value="female"> Female<br>
+                            <input type="radio" name="gender" value="other"> Other
+                        </p>
+                    </div>
+                    <label for="date-label">Date of Birth:</label>
+                    <input type="date" name="bday">            
+                </fieldset>
+                <fieldset>
+                    <label for="Gender">Job Position</label>
+                    <p>
+                        <input type="checkbox" name="sr-manager" value="sr-manager"> Sr. Manager<br>
+                        <input type="checkbox" name="age" value="Car"> Jr. Manager<br>
+                        <input type="checkbox" name="hr" value="hr"> HR<br>
+                        <input type="checkbox" name="java-developer" value="java-developer"> Java Developer<br>
+                        <input type="checkbox" name="ui-developer" value="ui-developer"> UI Developer<br>
+                        <input type="checkbox" name="ba" value="ba"> Business Analyst<br>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="politics">Education Level Completed:</label>
+                        <select id="dropdown2">
+                            <option value="University">University</option>
+                            <option value="College">College</option>
+                            <option value="Secondary">High School</option>  
+                            <option value="None">None</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="politics">Experience:</label>
+                        <div>
+                            <label id="name-label" for="company_name">Name of Current Company:</label>
+                            <input type="text" required id="name" name="company_name" placeholder="Enter company name here">   
+                        </div>
+                        <div>
+                            <label id="name-label" for="position_name">Name of Current Post:</label>
+                            <input type="text" required id="name" name="position_name" placeholder="Enter company name here">   
+                        </div>
+                        <label for="experience">No of years in current company</label>
+                        <select id="dropdown1">
+                            <option value="two">1-2</option>
+                            <option value="four">2-4</option>
+                            <option value="morethan4">More than 4</option>
+                            <option value="fresher">Fresher</option>
+                        </select>
+                        <p id="description"><b>Note:</b> Put NA if you are Fresher</p>
+                        
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <legend>About You</legend>
+                    </div>
+                    <div>
+                        <label for="msg"></label>
+                        <p> Why  you want to join our company?</p>
+                        <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   
+                    </div>
+                    <div>
+                        <label for="msg">Please upload contact details for 2 references</label><br>
+                        <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   
+                    </div>
+                    <p>Upload Educational Certificates and Experience Certificate here in single PDF file:
+                        <button>Attach Files</button>
+                    </p>
+                </fieldset>
+                <div id="submitbutton">
+                    <button type="submit" id="submit">Send your application</button>   
+                </div>
+            </form>
+        </div>
